@@ -1,0 +1,141 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ff4655;
+    font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+    color: #00d4ff;
+}
+
+/* Section */
+.section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4em;
+    color: #ff4655;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4655;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00d4ff;
+}
+
+/* Skills */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #1a1a1a;
+    border: 2px solid #ff4655;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 120px;
+    text-align: center;
+}
+
+/* Contact */
+.contact-section {
+    background: #222;
+}
+
+/* 3D Background */
+#3d-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+canvas {
+    background-color: transparent; /* Đảm bảo không có màu nền */
+    opacity: 0; /* Nếu không muốn hiển thị canvas */
+    z-index: -1; /* Đẩy canvas xuống dưới */
+    position: absolute; /* Đảm bảo nó không ảnh hưởng đến bố cục */
+    top: 0;
+    left: 0;
+}
+
+.discord-link {
+    color: #7289da; /* Màu đặc trưng của Discord */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.discord-link:hover {
+    color: #5865F2; /* Màu sáng hơn khi di chuột */
+}

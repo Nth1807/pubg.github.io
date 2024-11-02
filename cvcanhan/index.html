@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hưng Nguyễn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- 3D Background -->
+    <div id="3d-background">
+        <video autoplay muted loop id="background-video">
+            <source src="videopubg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <section id="home" class="section home-section">
+        <h1>nani_defug</h1>
+        <br>
+        <p>PUBG</p>
+        <button onclick="scrollToSection('#about')">Learn More</button>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <br>
+        <p>người hèn chơi game</p>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <br>
+        <div class="skill-box">
+            <br>
+            <div class="skill">loot</div>
+            <div class="skill">sấy như con c..</div>
+            <div class="skill">FPP</div>
+            <div class="skill">TPP</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2>Contact Me</h2>
+        <br>
+        <p>Liên hệ qua Discord:</p>
+        <br>
+    <a href="https://discord.com/channels/@me" target="_blank" class="discord-link">
+        Kết bạn với tôi: derekk#7791
+    </a>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
